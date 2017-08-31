@@ -6,7 +6,7 @@
                 <button class="delete" @click="isVisible = false"></button>
             </div>
             <div class="message-body">
-                {{ body }}
+                {{ shortenBody }}
             </div>
         </article>
 
@@ -30,10 +30,11 @@
             };
         },
 
-        methods: {
-            hideModal(){
-                this.isVisible = false;
+        computed : {
+            shortenBody: function() {
+                return this.body.slice(10)
             }
+
         }
 
     }

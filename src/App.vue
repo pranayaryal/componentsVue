@@ -1,40 +1,41 @@
 <template>
-  <div id="app">
-      <tabs>
-          <tab name="My Pictures" :selected="true">This is the pictures page. I hope you will like my pictures</tab>
-          <tab name="Music">This is the Music page</tab>
-          <tab name="Videos">This is the Videos page</tab>
-          <tab name="Documents">This is the Documents page. I hope you will like it</tab>
-          <modal v-if="showModal" @close="showModal = false">
-              <p>We insert another text here.</p>
-          </modal>
-          <button @click="showModal= true">Show Modal</button>
-          <message title="Hello World" body="Lorem ipsum dolor sit amet this is so nice"></message>
-          <message title="Welcome to messages" body="This is another message"></message>
-      </tabs>
-  </div>
+    <div id="app">
+        <banner></banner>
+    </div>
 </template>
 
 <script>
 
-//    import Message from './components/Message.vue';
-//    import Counter from './components/Counter.vue';
     import Tabs from './components/Tabs.vue';
     import Tab from './components/Tab.vue';
     import Modal from './components/Modal.vue';
     import Message from './components/Message.vue';
+    import Coupon from './components/Coupon.vue';
+    import Visualize from './components/Visualize.vue';
+    import Columns from './components/Columns.vue';
+    import Column from './components/Column.vue';
+    import Box from './components/Box.vue';
+    import Banner from './components/Banner.vue';
 
 
     export default {
-      name: 'app',
-      components: { Tabs, Tab, Modal, Message },
+        name: 'app',
+        components: {Tabs, Tab, Modal, Message, Coupon, Visualize, Columns, Column, Box, Banner},
 
         data(){
             return {
-                showModal: false
+                showModal: false,
+                message_title: 'Message Title'
             }
-        }
+        },
 
+        methods: {
+            couponApplied(){
+                alert('coupon was applied');
+            },
+
+
+        }
 
 
     }

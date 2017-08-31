@@ -1,0 +1,41 @@
+/*
+* Button colors
+*/
+body {
+  background: white; }
+
+.banner {
+  background-color: #b6d0d3;
+  height: 600px;
+  width: auto;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px; }
+
+.banner-text {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 70px;
+  font-color: white;
+  font-weight: bold;
+  padding-top: 260px;
+  padding-left: auto/2 -100;
+  vertical-align: middle; }
+
+@media only screen and (max-width: 500px) {
+  .banner {
+    height: 240px; }
+
+  .banner-text {
+    font-size: 35px;
+    padding-top: 100px; } }
+@media only screen and (min-width: 500px) {
+  .banner-text {
+    font-size: 46.6666666667px;
+    padding-top: 180px; }
+
+  .banner {
+    height: 400px; } }
+
+/*# sourceMappingURL=main.css.map */

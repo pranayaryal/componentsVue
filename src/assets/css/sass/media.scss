@@ -1,0 +1,22 @@
+@media only screen and (max-width: 500px){
+
+  .banner{
+    height: $banner-height/2.5;
+  }
+  .banner-text{
+    font-size: $banner-font-size/2;
+    padding-top: $banner-height/5 - 20;
+    //vertical-align: middle;
+    //padding-left: $banner-width/2 - 40;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  .banner-text{
+    font-size: $banner-font-size/1.5;
+    padding-top: $banner-height/3 - 20;
+  }
+  .banner{
+    height: $banner-height/1.5;
+  }
+}

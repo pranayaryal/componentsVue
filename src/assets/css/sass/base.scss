@@ -1,0 +1,39 @@
+$primary : white;
+$banner-height : 600px;
+$banner-width: auto;
+$banner-font-size: 70px;
+/*
+* Button colors
+*/
+$btn-primary: #7bffe9;
+$btn-secondary: #ffc0c0;
+
+
+body{
+  background: $primary;
+}
+
+.banner {
+  background-color: #b6d0d3;
+  height: $banner-height;
+  width: $banner-width;
+  z-index:-1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+
+}
+
+.banner-text{
+  text-align: center;
+  font-family: Helvetica;
+  font-size: $banner-font-size;
+  font-color:white;
+  font-weight: bold;
+  padding-top: $banner-height/2 - 40;
+  padding-left: $banner-width/2 -100;
+  vertical-align: middle;
+}
+
+
+

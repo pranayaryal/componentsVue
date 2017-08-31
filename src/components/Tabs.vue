@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <div class="tabs">
             <ul>
                 <li v-for="tab in tabs" :class="{ 'is-active': tab.isActive }">
@@ -9,7 +9,7 @@
         </div>
 
         <div class="tabs-details">
-            <slot></slot>
+                <slot></slot>
         </div>
 
     </div>
@@ -43,6 +43,7 @@
 </script>
 
 <style>
-    @import "../../node_modules/bulma/css/bulma.css";
+    /*@import "../../node_modules/bulma/css/bulma.css";*/
 </style>
+
 
