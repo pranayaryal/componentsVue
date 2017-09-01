@@ -2,14 +2,15 @@
 
   .banner {
     height: $banner-height/2.5;
-    p {
-      text-align: center;
-      font: {
-        size: $banner-font-size/2.5;
-      }
-      padding-left: $banner-width/2 - 100;
-      padding-top: $banner-height/5.5;
-    }
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+        p {
+          font: {
+            size: $banner-font-size/3;
+          }
+        }
 
   }
 }
@@ -17,13 +18,14 @@
   @media  (min-width: 500px) {
     .banner {
       height: $banner-height/1.5;
+        display: flex;
+        align-items:center;
+        justify-content: center;
 
       p {
         font: {
-          size: $banner-font-size/1.5;
+          size: $banner-font-size/2;
         }
-        padding-left: $banner-width/2 - 100;
-        padding-top: $banner-height/3.5;
       }
     }
   }
