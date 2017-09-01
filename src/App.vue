@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <navigation></navigation>
         <banner></banner>
     </div>
 </template>
@@ -16,11 +17,12 @@
     import Column from './components/Column.vue';
     import Box from './components/Box.vue';
     import Banner from './components/Banner.vue';
+    import Navigation from './components/Navigation.vue';
 
 
     export default {
         name: 'app',
-        components: {Tabs, Tab, Modal, Message, Coupon, Visualize, Columns, Column, Box, Banner},
+        components: {Tabs, Tab, Modal, Message, Coupon, Visualize, Columns, Column, Box, Banner, Navigation},
 
         data(){
             return {

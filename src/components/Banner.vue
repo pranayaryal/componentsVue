@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <div class="banner">
-            <p class="banner-text">Enter Text Here</p>
-        </div>
+    <div class="banner">
+        <p>Enter Text Here</p>
     </div>
 </template>
 
