@@ -1,7 +1,11 @@
 $primary : white;
-$banner-height : 600px;
+$banner-height : 400px;
 $banner-width: auto;
 $banner-font-size: 70px;
+$font-family: Helvetica;
+$nav-font-size: 15px;
+$nav-height: 40px;
+$nav-color: #85144b;
 /*
 * Button colors
 */
@@ -14,26 +18,62 @@ body{
 }
 
 .banner {
-  background-color: #b6d0d3;
+  //background-color: #AAAAAA;
   height: $banner-height;
   width: $banner-width;
-  z-index:-1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 0px;
+
+  p{
+    margin-top:0;
+    text-align:center;
+    font:{
+      color:$primary;
+      weight:bold;
+      size: $banner-font-size;
+      family: $font-family;
+    }
+    padding-left: $banner-width/2 - 100;
+    padding-top: $banner-height/3.5;
+    vertical-align: middle;
+  }
 
 }
 
-.banner-text{
+.nav-wrapper {
+  float: right;
+  height: $nav-height;
+  margin-bottom: 0px;
+
+  .navigation {
+    margin:0px;
+  }
+}
+
+.container {
+  overflow:hidden;
+  padding-left:50px;
+  padding-right:50px;
+  background-color: #FF4136;
+  height: $nav-height;
+  padding-top:$nav-height/2.4 + 5;
+  margin-bottom:0;
+}
+
+.nav-list-item{
+  display:inline;
+  padding-left:20px;
+  padding-top:20px;
+  padding-right:20px;
   text-align: center;
-  font-family: Helvetica;
-  font-size: $banner-font-size;
-  font-color:white;
-  font-weight: bold;
-  padding-top: $banner-height/2 - 40;
-  padding-left: $banner-width/2 -100;
-  vertical-align: middle;
+  text-decoration: none;
+  font-family:$font-family;
+  font-size: $nav-font-size;
+  font-color: $primary;
 }
+
+#app{
+  -webkit-margin-after: 0px;
+}
+
 
 
 
