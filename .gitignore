@@ -5,4 +5,5 @@ npm-debug.log
 yarn-error.log
 .idea/*
 *.swp
+.idea/workspace.xml
 
