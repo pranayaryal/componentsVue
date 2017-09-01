@@ -1,6 +1,8 @@
 <template>
     <div id="app">
+        
         <banner></banner>
+
     </div>
 </template>
 
