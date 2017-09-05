@@ -3,6 +3,7 @@
         
         <navigation></navigation>
         <banner></banner>
+        <boxes></boxes>
 
     </div>
 </template>
@@ -17,14 +18,16 @@
     import Visualize from './components/Visualize.vue';
     import Columns from './components/Columns.vue';
     import Column from './components/Column.vue';
-    import Box from './components/Box.vue';
+    import Media from './components/Media.vue';
     import Banner from './components/Banner.vue';
     import Navigation from './components/Navigation.vue';
+    import Boxes from './components/Boxes.vue';
+    import Sidenav from './components/Sidenav.vue';
 
 
     export default {
         name: 'app',
-        components: {Tabs, Tab, Modal, Message, Coupon, Visualize, Columns, Column, Box, Banner, Navigation},
+        components: {Tabs, Tab, Modal, Message, Coupon, Visualize, Columns, Column, Media, Banner, Navigation, Boxes, Sidenav},
 
         data(){
             return {

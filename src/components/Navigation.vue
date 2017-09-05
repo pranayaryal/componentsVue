@@ -1,14 +1,14 @@
 <template>
-    <div class="container">
+        <div class="navline">
             <nav>
-		<ul>
-		    <li><a href="#" class="nav-list-item">PRANAY ARYAL</a></li>
-		    <li><a href="#" class="nav-list-item">About</a></li>
-		    <li><a href="#" class="nav-list-item">Contact</a></li>
-		    <li><a href="#" class="nav-list-item">Home</a></li>
-		</ul>
+                <ul>
+                    <li><a href="#" class="nav-list-item">Your Name</a></li>
+                    <li><a href="#" class="nav-list-item">About</a></li>
+                    <li><a href="#" class="nav-list-item">Contact</a></li>
+                    <li><a href="#" class="nav-list-item">Home</a></li>
+                </ul>
             </nav>
-    </div>
+        </div>
 </template>
 <script>
 

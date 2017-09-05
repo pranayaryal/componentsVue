@@ -1,92 +1,41 @@
-$primary : white;
-$banner-height : 400px;
-$banner-width: auto;
-$banner-font-size: 100px;
-$font-family: Helvetica;
-$nav-font-size: 20px;
-$nav-height: 40px;
-$nav-color: #85144b;
-/*
-* Button colors
-*/
-$btn-primary: #7bffe9;
-$btn-secondary: #ffc0c0;
-
-
-body{
+body {
   background: $primary;
 }
 
 .banner {
-  background-color: #AAAAAA;
-  height: $banner-height;
-  width: $banner-width;
+  background:grey;
+  height: $banner-height/2.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  p{
-    font:{
-      color:$primary;
-      weight:bold;
-      size: $banner-font-size;
+  p {
+    font: {
+      size: $banner-font-size/4;
       family: $font-family;
     }
-    display: flex;
-    align-items:center;
-    justify-content: center;
   }
 
 }
 
-.nav-container{
-  padding-left:70px;
-  padding-right:70px;
-}
 
-
-ul, li {
-    margin: 0; padding: 0;
-    list-style: none;
-}
 
 .container {
-  padding-left:70px;
-  padding-right:70px;
-  background-color: #FF4136;
-  height: $nav-height;
-  padding-top:$nav-height/2.4 + 5;
-
-    ul {
-	display: flex;
-    }
-
-    li {
-	flex: 1;
-	text-align:center;
-	a{
-	  color: white;
-
-	  font-size: $nav-font-size;
-	  text-decoration:none;
-	}
-    }
-
-    li:hover{
-	background:orange;
-    }
-    
-    li:first-child{
-	flex:2;
-	text-align:center;
-    }
-
+  padding-left: 70px;
+  padding-right: 70px;
 
 }
-
 
 
 body {
+  margin: 0;
+  height: 100%;
+  font-family: $font-family;
+  ul, li{
     margin: 0;
-    height: 100%;
-    font-family: $font-family;
+    padding:0;
+    list-style:none;
+  }
 }
 
 

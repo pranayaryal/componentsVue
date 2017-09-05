@@ -1,31 +1,135 @@
-@media (max-width: 500px) {
 
+//@media (min-width: 801px) {
+//  .banner {
+//    height: $banner-height/1.5;
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//
+//    p {
+//      font: {
+//        size: $banner-font-size/2;
+//      }
+//    }
+//  }
+//
+//  .box-container{
+//    display: flex;
+//    flex-direction: row-reverse;
+//  }
+//
+//  .box {
+//    font-size: $box-font-size;
+//    background: white;
+//    display: flex;
+//    width: 200px;
+//    height: 200px;
+//    margin: 10px 25px;
+//    align-items:center;
+//    justify-content: center;
+//    flex:1;
+//  }
+//
+//  .box:nth-child(3) {
+//    flex: 1;
+//
+//  }
+//}
+
+//@media (min-width: 480px) {
+//
+//  .banner {
+//    background-color: #AAAAAA;
+//    height: $banner-height;
+//    width: $banner-width;
+//
+//    p {
+//      font: {
+//        color: $primary;
+//        weight: bold;
+//        size: $banner-font-size;
+//        family: $font-family;
+//      }
+//      display: flex;
+//      align-items: center;
+//      justify-content: center;
+//    }
+//
+//  }
+//
+//}
+
+@media (min-width: 480px){
   .banner {
-    height: $banner-height/2.5;
+    height: $banner-height/1.5;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 
-        p {
-          font: {
-            size: $banner-font-size/3;
-          }
-        }
+    p {
+      font: {
+        family: $font-family;
+        size: $banner-font-size/2;
+      }
+    }
+  }
+
+  .box-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box {
+    font-size: $box-font-size/1.015;
+    background: white;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 10px 25px;
+    align-items:center;
+    justify-content: center;
+    border-bottom: none;
+    flex:1;
+  }
+
+
+  .navline {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: #FF4136;
+    height: $nav-height;
+    padding-top: $nav-height/2.4 + 5;
+
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+    }
+
+    li {
+      flex: 1;
+      text-align: center;
+      padding-top:0;
+      a {
+        color: white;
+        font-size: $nav-font-size/1.25;
+        text-decoration: none;
+      }
+    }
+
+    li:first-child {
+      flex: 2;
+      text-align: left;
+    }
+
+    nav > ul {
+      flex-direction: row;
+    }
 
   }
 }
 
-  @media  (min-width: 500px) {
-    .banner {
-      height: $banner-height/1.5;
-        display: flex;
-        align-items:center;
-        justify-content: center;
 
-      p {
-        font: {
-          size: $banner-font-size/2;
-        }
-      }
-    }
-  }
+
+

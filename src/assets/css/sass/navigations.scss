@@ -1,0 +1,39 @@
+.navline {
+
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: #FF4136;
+  height: $nav-height;
+  padding-top: $nav-height/2.4 + 5;
+  height: 100px;
+
+  ul {
+    flex-direction: column;
+    justify-content:center;
+    list-style:none;
+  }
+
+  li {
+    flex: 1;
+    text-align: center;
+    padding-top: 5px;
+    a {
+      color: white;
+      font-size: $nav-font-size/1.5;
+      text-decoration: none;
+      &:hover{
+        color:steelblue;
+      }
+    }
+  }
+
+  li:first-child {
+    padding-top: 0;
+    flex: 1;
+    text-align: center;
+  }
+
+  nav > ul {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,10 @@
+.box-container {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box{
+  padding: 25px 15px;
+  font-size: $box-font-size/1.5;
+  border-bottom: 1px solid pink;
+}
