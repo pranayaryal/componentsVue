@@ -1,9 +1,9 @@
 <template>
     <div id="app">
-        
-        <navigation></navigation>
-        <banner></banner>
-        <boxes></boxes>
+
+        <!--<navigation></navigation>-->
+        <!--<banner></banner>-->
+        <!--<boxes></boxes>-->
 
     </div>
 </template>
@@ -23,29 +23,40 @@
     import Navigation from './components/Navigation.vue';
     import Boxes from './components/Boxes.vue';
     import Sidenav from './components/Sidenav.vue';
+    import Leg from './components/Leg.vue';
+    import routes from './routes';
 
 
     export default {
         name: 'app',
-        components: {Tabs, Tab, Modal, Message, Coupon, Visualize, Columns, Column, Media, Banner, Navigation, Boxes, Sidenav},
+        components: {
+            Tabs,
+            Tab,
+            Modal,
+            Message,
+            Coupon,
+            Visualize,
+            Columns,
+            Column,
+            Media,
+            Banner,
+            Navigation,
+            Boxes,
+            Sidenav,
+            Leg
+        },
 
         data(){
             return {
                 showModal: false,
-                message_title: 'Message Title'
+                message_title: 'Message Title',
+                currentRoute: window.location.pathname
             }
         },
 
-        methods: {
-            couponApplied(){
-                alert('coupon was applied');
-            },
-
-
-        }
-
 
     }
+
 </script>
 
 
