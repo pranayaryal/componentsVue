@@ -1,33 +1,36 @@
 import Vue from 'vue'
-// import App from './App.vue'
-import routes from './routes'
+import App from './App.vue'
+import Home from './pages/Home.vue'
+import About from './pages/About.vue'
+import Blog from './pages/Blog.vue'
+import Contact from './pages/Contact.vue'
+import NotFound from './pages/404.vue'
 
+
+const routes = {
+    '/' : Home,
+    '/about': About,
+    '/contact': Contact,
+    '/blog': Blog
+};
 
 const app = new Vue({
     el: '#app',
+
     data: {
         currentRoute: window.location.pathname
     },
 
-    mounted() {
-        console.log(this.$components)
-    },
-
-
     computed: {
-        ViewComponent()
-        {
-            const matchingView = routes[this.currentRoute]
-            return matchingView
-                ? require('./pages/' + matchingView + '.vue')
-                : require('./pages/404.vue')
+        ViewComponent(){
+            return routes[this.currentRoute] || NotFound
         }
     },
 
-    render: h => h(this.ViewComponent)
+    render(h){
+        return h(this.ViewComponent)
+    }
+
 });
 
-window.addEventListener('popstate', () => {
-    app.currentRoute = window.location.pathname
-})
 

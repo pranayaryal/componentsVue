@@ -1,9 +1,9 @@
 <template>
     <div id="app">
 
-        <!--<navigation></navigation>-->
-        <!--<banner></banner>-->
-        <!--<boxes></boxes>-->
+        <navigation></navigation>
+        <banner></banner>
+        <boxes></boxes>
 
     </div>
 </template>
@@ -25,6 +25,7 @@
     import Sidenav from './components/Sidenav.vue';
     import Leg from './components/Leg.vue';
     import routes from './routes';
+    import vlink from './components/VLink.vue';
 
 
     export default {
@@ -43,7 +44,8 @@
             Navigation,
             Boxes,
             Sidenav,
-            Leg
+            Leg,
+            vlink
         },
 
         data(){
