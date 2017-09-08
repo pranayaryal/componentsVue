@@ -1,5 +1,6 @@
 export default{
     '/': 'Home',
     '/about': 'About',
-    '/contact': 'Contact'
+    '/contact': 'Contact',
+    '/blog' : 'Blog'
 }

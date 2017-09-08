@@ -44,7 +44,7 @@
 
 <style scoped>
     .active{
-        color:cornflowerblue;
+        color:purple;
     }
 
 </style>

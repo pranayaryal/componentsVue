@@ -3,6 +3,7 @@ import App from './App.vue'
 import Home from './pages/Home.vue'
 import About from './pages/About.vue'
 import Blog from './pages/Blog.vue'
+import Buy from './pages/Buy.vue'
 import Contact from './pages/Contact.vue'
 import NotFound from './pages/404.vue'
 
@@ -11,7 +12,8 @@ const routes = {
     '/' : Home,
     '/about': About,
     '/contact': Contact,
-    '/blog': Blog
+    '/blog': Blog,
+    '/buy' : Buy
 };
 
 const app = new Vue({
@@ -31,6 +33,10 @@ const app = new Vue({
         return h(this.ViewComponent)
     }
 
+});
+
+window.addEventListener('popstate', () => {
+    app.currentRoute = window.location.pathname
 });
 
 
