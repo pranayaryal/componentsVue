@@ -1,14 +1,14 @@
 
 //@media (min-width: 801px) {
-//  .banner {
-//    height: $banner-height/1.5;
+//  .hero {
+//    height: $hero-height/1.5;
 //    display: flex;
 //    align-items: center;
 //    justify-content: center;
 //
 //    p {
 //      font: {
-//        size: $banner-font-size/2;
+//        size: $hero-font-size/2;
 //      }
 //    }
 //  }
@@ -38,16 +38,16 @@
 
 //@media (min-width: 480px) {
 //
-//  .banner {
+//  .hero {
 //    background-color: #AAAAAA;
-//    height: $banner-height;
-//    width: $banner-width;
+//    height: $hero-height;
+//    width: $hero-width;
 //
 //    p {
 //      font: {
 //        color: $primary;
 //        weight: bold;
-//        size: $banner-font-size;
+//        size: $hero-font-size;
 //        family: $font-family;
 //      }
 //      display: flex;
@@ -59,20 +59,51 @@
 //
 //}
 
-@media (min-width: 480px){
-  .banner {
-    height: $banner-height/1.5;
+@media (min-width: 1025px) and (max-width: 1920px){
+  .hero {
+    height: 300px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    p {
-      font: {
-        family: $font-family;
-        size: $banner-font-size/2;
-      }
-    }
   }
+
+  .hero-name{
+    font-size: 55px;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+
+
+    line-height: 1em;
+    color: #080808;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  .hero-centering-wrapper{
+    padding: 0;
+    margin: 0 100px;
+    width: 100%;
+  }
+
+  .hero-heading {
+    flex-basis: 646px;
+  }
+
+  .hero-description{
+    display: block;
+    align-self: flex-end;
+    max-width: 713px;
+    flex-basis: 50%;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: normal;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.625em;
+    margin: 0;
+  }
+
 
   .box-container{
     display: flex;
@@ -80,13 +111,13 @@
   }
 
   .box {
-    font-size: $box-font-size/1.015;
+    font-size: 20px;
     background: white;
     display: flex;
     width: 200px;
     height: 200px;
     margin: 10px 25px;
-    align-items:center;
+    align-items:flex-start;
     justify-content: center;
     border-bottom: none;
     flex:1;
@@ -96,9 +127,9 @@
   .navline {
     padding-left: 70px;
     padding-right: 70px;
-    background-color: #FF4136;
-    height: 40px;
+    height: 70px;
     padding-top: 20px;
+    background: #f7f7f7;
 
 
     ul {
@@ -112,14 +143,16 @@
       text-align: center;
       padding-top:0;
       a {
-        color: white;
-        font-size: $nav-font-size/1.25;
+        color: black;
+        font-size: $nav-font-size/1.05;
+        font-weight: 300;
+        font-family: 'Nunito';
         text-decoration: none;
       }
     }
 
     li:first-child {
-      flex: 2;
+      flex: 1;
       text-align: left;
     }
 
@@ -127,6 +160,87 @@
       flex-direction: row;
     }
 
+  }
+
+
+
+
+}
+
+//images
+
+@media(min-width: 480px){
+
+  .img-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-box {
+    font-size: 14px;
+    background: white;
+    width: 200px;
+    height: 200px;
+    margin: 70px 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
+    flex: 1;
+    border: none;
+      p{
+        padding-top: 10px;
+        padding-left: 5px;
+      }
+  }
+
+  .img {
+    display: flex;
+    height: 220px;
+    width: 250px;
+    transform: rotate(90deg);
+  }
+
+}
+
+
+@media(min-width: 780px) and (max-width: 995px){
+
+  .hero-name{
+    font-size: 20px;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .hero-small-description{
+    display:none;
+    font-size: 8px;
+  }
+
+
+
+
+  .hero-centering-wrapper{
+    padding: 0;
+    margin: 0 100px;
+    width: 100%;
+  }
+
+  .hero-heading {
+    flex-basis: 50%;
+  }
+
+  .hero-description{
+    display: block;
+    align-self: flex-end;
+    max-width: 713px;
+    flex-basis: 90%;
+    font-size: 17px;
+    font-weight: 300;
+    font-family:"Nunito", sans-serif;
+    line-height: 1.625em;
+    margin: 0;
   }
 }
 
