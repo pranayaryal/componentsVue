@@ -1,46 +1,66 @@
 body {
-  background: $primary;
+  //background: $primary;
+  background: #F7F7F7;
 }
 
+a{
+  text-decoration:none;
+}
+
+
+//hero features
 .hero {
-  background: #f7f7f7;
+  background: #F7F7F7;
+  height: $hero-height/4;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
+  p {
+
+  }
 }
 
-.hero-wrapper{
-  padding: 0 10px;
-}
-
-.hero-headline{
-}
-
-.hero-name{
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 35px;
-  line-height: 1.1em;
-  letter-spacing: 1.1px;
-  margin-bottom: 9px;
+.hero-centering-wrapper{
+  width:100%;
+  margin:0;
+  display: flex;
+  padding: 0 30px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .hero-small-description{
-
+  font-family: 'Gotham SSm',sans-serif;
   font-size: 9px;
-  font-family: sans-serif;
-  line-height: 1.1em;
+  line-height: 1.11111em;
+  letter-spacing: 0.33333333em;
   text-transform: uppercase;
-  letter-spacing:1.1px;
-  margin: 0;
+  margin:0;
   padding:0;
+}
+
+.hero-name{
+
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin: 0;
+
+  line-height: 1em;
+  color: #080808;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 .hero-description{
   display: none;
+
 }
+
 
 
 
@@ -64,3 +84,87 @@ body {
 
 
 
+//boxes
+
+.box-container {
+  flex-direction: column;
+}
+
+.box{
+  padding: 25px 15px;
+  font-size: 18px;
+  border-bottom: 1px solid pink;
+  justify-content: space-around;
+  align-items:center;
+}
+
+
+
+
+
+//nagivation
+
+.navline {
+
+  padding-left: 70px;
+  padding-right: 70px;
+  height: 40px;
+  padding-top: 5px;
+  background: #f7f7f7;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+
+  li {
+    flex: 1;
+    text-align: center;
+    padding-top: 8px;
+    a {
+      color: black;
+      font-size: 20px/2;
+      text-decoration: none;
+      &:hover{
+        color:steelblue;
+      }
+    }
+  }
+
+  li:first-child {
+    flex: 1;
+    text-align: left;
+  }
+
+
+  nav > ul {
+    flex-direction: row;
+  }
+}
+
+
+//images
+
+
+.img-container {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.img-box {
+  font-size: 14px;
+  border-bottom: 1px solid red;
+  padding: 30px 15px;
+    p{
+      margin-top: 10px;
+    }
+}
+
+
+.img {
+  height: 200px;
+  width: 200px;
+  transform: rotate(90deg);
+  margin-left: 30px;
+}

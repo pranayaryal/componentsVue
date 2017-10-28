@@ -1,14 +1,14 @@
 <template>
     <div id="app">
 
-        <navigation></navigation>
-        <banner></banner>
+        <hero></hero>
         <boxes></boxes>
 
     </div>
 </template>
 
 <script>
+
 
     import Tabs from './components/Tabs.vue';
     import Tab from './components/Tab.vue';
@@ -26,6 +26,7 @@
     import Leg from './components/Leg.vue';
     import routes from './routes';
     import vlink from './components/VLink.vue';
+    import Naksha from './components/Naksha.vue';
 
 
     export default {
@@ -45,7 +46,8 @@
             Boxes,
             Sidenav,
             Leg,
-            vlink
+            vlink,
+            Naksha
         },
 
         data(){
@@ -64,4 +66,6 @@
 
 <style>
     /*@import "../node_modules/bulma/css/bulma.css";*/
+    @import "~bootstrap/dist/css/bootstrap.css";
+
 </style>

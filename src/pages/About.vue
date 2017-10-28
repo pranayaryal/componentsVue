@@ -1,16 +1,19 @@
 <template>
     <div>
         <navigation></navigation>
-        <p class="container">You are in about page</p>
+        <br><br>
+        <cats></cats>
     </div>
 </template>
 
 <script>
     import Navigation from '../components/Navigation.vue'
+    import Cats from '../components/Cats.vue'
     export default{
         name: 'app',
         components: {
-            Navigation
+            Navigation,
+            Cats
         }
     }
 
