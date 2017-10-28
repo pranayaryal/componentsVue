@@ -19,7 +19,7 @@
     import Columns from './components/Columns.vue';
     import Column from './components/Column.vue';
     import Media from './components/Media.vue';
-    import Banner from './components/Banner.vue';
+    import Hero from './components/Hero.vue';
     import Navigation from './components/Navigation.vue';
     import Boxes from './components/Boxes.vue';
     import Sidenav from './components/Sidenav.vue';
@@ -40,7 +40,7 @@
             Columns,
             Column,
             Media,
-            Banner,
+            Hero,
             Navigation,
             Boxes,
             Sidenav,

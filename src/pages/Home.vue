@@ -8,7 +8,7 @@
 <script>
 
     import Navigation from '../components/Navigation.vue'
-    import Banner from '../components/Banner.vue'
+    import Banner from '../components/Hero.vue'
     import Boxes from '../components/Boxes.vue'
 
     export default{

@@ -41,7 +41,7 @@
     import Columns from './components/Columns.vue';
     import Column from './components/Column.vue';
     import Box from './components/Box.vue';
-    import Banner from './components/Banner.vue';
+    import Banner from './components/Hero.vue';
 
 
     export default {
