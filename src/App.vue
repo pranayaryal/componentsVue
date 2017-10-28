@@ -9,6 +9,7 @@
 
 <script>
 
+
     import Tabs from './components/Tabs.vue';
     import Tab from './components/Tab.vue';
     import Modal from './components/Modal.vue';
@@ -65,5 +66,6 @@
 
 <style>
     /*@import "../node_modules/bulma/css/bulma.css";*/
+    @import "~bootstrap/dist/css/bootstrap.css";
 
 </style>

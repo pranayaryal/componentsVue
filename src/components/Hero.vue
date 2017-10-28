@@ -1,10 +1,10 @@
 <template>
         <div class="hero">
             <div class="hero-centering-wrapper">
-                <heading class="hero-heading">
+                <div class="hero-heading">
                     <h1 class="hero-name">Pranay Aryal</h1>
                     <small class="hero-small-description">Data Scientist & Web Developer</small>
-                </heading>
+                </div>
                 <p class="hero-description">
                     I am a developer and a Data Scientist with a background in statistically-informed medical diagnosis
                 </p>

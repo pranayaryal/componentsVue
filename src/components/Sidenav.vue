@@ -5,7 +5,7 @@
                 <p>Click to display menu</p>
             </div>
         </div>
-        <div class="sidebar-nav">
+        <div class="sidebar-nav" id="sidebar-nav">
             <nav>
                 <ul>
                     <li>
@@ -27,9 +27,10 @@
 </template>
 <script>
     export default {
-        mounted() {
-            console.log('the sidenav component is mounted');
+        created() {
+            console.log('component created');
         }
+
 
     }
 
@@ -46,7 +47,12 @@
         text-transform: uppercase;
     }
 
-    .sidebar-nav{
+    .portfolio-content{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .sidebar-nav {
         display: none;
     }
 
@@ -58,16 +64,16 @@
 
     }
 
+
     .sidebar-nav li {
         text-align: center;
         padding-top: 10px;
         text-transform: uppercase;
     }
 
-
     .toggle-box {
         width: 100%;
-        padding: 20px 10px 0;
+        padding: 1.4em;
         height: 70px;
         border: 1px solid grey;
         text-align: left;
@@ -78,8 +84,12 @@
             display: none;
         }
 
-        .sidebar-nav{
+        .sidebar-nav {
             display: block;
+        }
+
+        #sidebar-nav-ismobile {
+            display: none;
         }
     }
 

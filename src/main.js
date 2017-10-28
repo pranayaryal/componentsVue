@@ -8,6 +8,7 @@ import Contact from './pages/Contact.vue'
 import NotFound from './pages/404.vue'
 
 
+
 const routes = {
     '/' : Home,
     '/about': About,

@@ -6,9 +6,10 @@
           <div class="row">
               <div class="col-md-6">
                   <h1>Writing Components in Vue</h1>
+                  <hr class="red-hr">
               </div>
           </div>
-          <br>
+
           <div class="row">
               <div class="col-md-5">
                   <p class="lead">I am going to teach you how to build components in Vue.js</p>
@@ -36,4 +37,12 @@
 </script>
 
 <style scoped>
+    p {
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .red-hr{
+        border: 1px solid orange;
+    }
+
 </style>

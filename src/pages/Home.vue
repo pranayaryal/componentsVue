@@ -6,9 +6,12 @@
         <div class="row">
             <div class="col-md-2">
                 <sidenav></sidenav>
+
             </div>
 
         </div>
+        <br>
+        <low></low>
         <br>
 
         <!--<boxes></boxes>-->
@@ -21,6 +24,7 @@
     import Boxes from '../components/Boxes.vue'
     import Sidenav from '../components/Sidenav.vue'
     import Togglemenu from '../components/toggleMenu.vue'
+    import Low from '../components/Low.vue'
 
     export default{
         name: 'app',
@@ -29,8 +33,14 @@
             Hero,
             Boxes,
             Sidenav,
-            Togglemenu
+            Togglemenu,
+            Low
         }
+
     }
 
 </script>
+
+<style scoped>
+    @import "~bootstrap/dist/css/bootstrap.css";
+</style>
