@@ -2,9 +2,9 @@
     <div class="container">
         <figure class="p-5">
             <img :src="src" class="img-fluid rounded figure-img"/>
-            <figurecaption class="figure-caption">
+            <figcaption class="figure-caption">
                 <slot></slot>
-            </figurecaption>
+            </figcaption>
         </figure>
     </div>
 </template>
