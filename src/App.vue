@@ -66,6 +66,6 @@
 
 <style>
     /*@import "../node_modules/bulma/css/bulma.css";*/
-    @import "~bootstrap/dist/css/bootstrap.css";
+    @import '~bootstrap/dist/css/bootstrap.css';
 
 </style>
