@@ -1,6 +1,6 @@
 <template>
     <div>
-        <navigation></navigation>
+        <!--<navigation></navigation>-->
         <hero></hero>
         <br>
         <div class="row">
@@ -18,7 +18,7 @@
     </div>
 </template>
 <script>
-
+    import Nav2 from '../components/Nav2.vue'
     import Navigation from '../components/Navigation.vue'
     import Hero from '../components/Hero.vue'
     import Boxes from '../components/Boxes.vue'

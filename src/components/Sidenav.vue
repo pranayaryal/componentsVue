@@ -9,10 +9,10 @@
             <nav>
                 <ul>
                     <li>
-                        <p>One</p>
+                        <p v-on:click="clicked">One</p>
                     </li>
                     <li>
-                        <p>Two</p>
+                        <p>{{ clicked_value }}</p>
                     </li>
                     <li>
                         <p>Three</p>
@@ -29,6 +29,18 @@
     export default {
         created() {
             console.log('component created');
+        },
+
+        data(){
+            return {
+               'clicked_value': false
+            }
+        },
+
+        methods:{
+            clicked() {
+                this.clicked_value = !this.clicked_value;
+            }
         }
 
 

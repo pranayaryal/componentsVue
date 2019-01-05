@@ -1,6 +1,6 @@
 <template>
    <div>
-      <navigation></navigation>
+      <!--<navigation></navigation>-->
       <br><br>
       <div class="container">
           <div class="row">

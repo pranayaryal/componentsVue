@@ -11,6 +11,7 @@
                     <li><vlink href="/blog" class="nav-list-item">Blog</vlink></li>
                     <li><vlink href="/buy" class="nav-list-item">Buy</vlink></li>
                     <li><vlink href="/contact" class="nav-list-item">Contact</vlink></li>
+                    <li><vlink href="/pomodoro" class="nav-list-item">Pomodoro</vlink></li>
                 </ul>
             </nav>
         </div>

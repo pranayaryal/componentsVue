@@ -3,7 +3,7 @@
         <span style="font-size:30px;cursor:pointer" v-on:click="openNav()" class="togglenav">&#9776;</span>
         <div class="collapsenav" id="navcollapse">
 
-            <span class="cross" v-on:click="closeNav">&times;</span>
+            <span class="cross" @click="closeNav">&times;</span>
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -22,6 +22,13 @@
             console.log('collapsible nav is mounted');
         },
 
+        data() {
+            return {
+                active: false
+            }
+
+        },
+
         methods: {
             closeNav() {
                 $('#navcollapse').css('width', 0)
@@ -30,6 +37,12 @@
             openNav() {
                 console.log('nav opened')
                 $('#navcollapse').css('width', '300px')
+            },
+
+            mouseLeave() {
+                alert('you are in mouseleave')
+//                this.active = !this.active;
+//                console.log(this.active);
             }
         }
     }

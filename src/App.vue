@@ -1,9 +1,18 @@
 <template>
-    <div id="app">
+    <!--<div id="app">-->
 
-        <hero></hero>
-        <boxes></boxes>
+        <!--<hero></hero>-->
+        <!--<boxes></boxes>-->
 
+    <!--</div>-->
+
+    <div>
+        <router-link to="/">Home</router-link>
+        <router-link to="/contact">Contact</router-link>
+        <router-link to="/buy">Buy</router-link>
+        <main>
+            <router-view></router-view>
+        </main>
     </div>
 </template>
 

@@ -1,10 +1,15 @@
 <template>
     <div class="container">
         <figure class="p-5">
+<<<<<<< HEAD
             <img :src="src" class="img-rounded img-responsive"/>
             <figurecaption class="figure-caption">
+=======
+            <img :src="src" class="img-fluid rounded figure-img"/>
+            <figcaption class="figure-caption">
+>>>>>>> ac73c0add8bef4b61ac2b3a342fa240b73764a52
                 <slot></slot>
-            </figurecaption>
+            </figcaption>
         </figure>
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <navigation></navigation>
+        <!--<navigation></navigation>-->
         <br><br>
         <cats></cats>
     </div>
